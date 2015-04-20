@@ -6,3 +6,45 @@ div.row{
 div.frame{
 	width:1.06in;
 	height:1.06in;}
+
+#bracelete{
+	left:4in;
+  top:4in;
+	width: 1.10in;
+	height:1.11in;
+	position: absolute;
+
+}
+#layout_baixo{
+	z-index: -1;
+	position: absolute;
+}
+.right{
+  width:0.2in;
+  height:0.8in;
+  top: 0.2in; 
+
+}
+.left{
+	left:0.04in;
+  width:0.3in;
+  height:0.8in;
+  top: 0.2in;
+}
+/*
+.carousel-indicators li{
+  width:0.08in;!
+  height:0.08in;
+  top:0.9in;
+}
+.carousel-indicators .active {
+    width:0.085in;
+  height:0.085in;
+  top:0.9in;
+}*/
+
+.carousel-inner{
+	top:0.1in;
+	left:0.2in;
+}
+
