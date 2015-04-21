@@ -23,32 +23,3 @@ button{
 	text-align: center;
 	width: 100px;
 }
-.carousel-fade {
-  .carousel-inner {
-    .item {
-      opacity: 0;
-      transition-property: opacity;
-    }
-    .active {
-      opacity: 1;
-    }
-
-    .active.left,
-    .active.right {
-      left: 0;
-      opacity: 0;
-      z-index: 1;
-    }
-}
-}
-
-    .next.left,
-    .prev.right {
-      opacity: 1;
-    }
-  }
-
-#Menu_NFC{
-	right:0.1in;
-}
-
