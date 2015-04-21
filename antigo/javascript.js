@@ -175,6 +175,24 @@ function MenuChoice_dir(){
 	}
 
 }
+function MenuChoice_left(){
+	switch(state) {
+	    case "Menu1":
+	    	Menu_hologame();
+	    	break;
+	    case "Menu2":
+	    	Menu_NFC();
+	    	break;
+	    case "Menu3":
+	    	Menu_holograma();
+	    	break;
+	    default:
+	    	Menu_holograma();
+    
+
+	}
+
+}
 
 function Block(){
 	
