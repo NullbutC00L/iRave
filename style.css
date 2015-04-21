@@ -25,26 +25,35 @@ div.frame{
   top: 0.2in; 
 
 }
+
+#carousel-example-generic{
+
+
+}
 .left{
-	left:0.04in;
+
+	left: 0.04in;
   width:0.3in;
   height:0.8in;
-  top: 0.2in;
+  top: 0.15in;
 }
-/*
-.carousel-indicators li{
-  width:0.08in;!
-  height:0.08in;
-  top:0.9in;
-}
-.carousel-indicators .active {
-    width:0.085in;
-  height:0.085in;
-  top:0.9in;
-}*/
 
+.right{
+	right:2in;
+  width:0.3in;
+  height:0.8in;
+  top: 0.15in;
+}
 .carousel-inner{
-	top:0.1in;
-	left:0.2in;
+	top:0.08in;
+	left:0.07in;
+}
+.carousel-indicators{
+	left:0.55in;
+	top:0.75in;
 }
 
+
+#Menu_NFC{
+	right:0.1in;
+}
