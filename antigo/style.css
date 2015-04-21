@@ -1,0 +1,210 @@
+html{
+	/*background-image: url("sources/background.jpg");*/
+	background-size:   cover;                     /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+
+
+}
+
+#boxerr {
+  border: 0.15in solid #5A5A5A ;
+  border-bottom:0.2in solid #5A5A5A; 
+  width:1.05in;
+  height:1.05in;
+  border-radius: 0.3in;
+  text-align:center;
+  position: absolute;
+  left:4in;
+  top:4in;
+  background:white ;   
+}
+
+/******************************************************/
+#passo1{
+  left:0.3in;
+  top:0.83in;
+  position: absolute;
+  visibility: hidden;
+
+  
+}
+#passo2{
+  left:0.3in;
+  top:0.83in;
+  position: absolute;
+  visibility:hidden;
+}
+#passo3{
+  left:0.1in;
+  top:0.83in;
+  position: absolute;
+  visibility:hidden;
+}
+
+
+#forma{
+   position: absolute;
+   visibility:hidden;
+}
+
+
+#passo2_alt{
+  left:0.1in;
+  top:0.83in;
+  position: absolute;
+  visibility:hidden;
+}
+#Ok_alt{
+  left:4.67in;
+  top:4.96in;
+  position: absolute;
+  visibility:hidden;
+
+}
+
+input{
+  width: 100%;
+}
+
+#fingerprint_alt{
+  left:4.3in;
+  top:4.2in;
+  position: absolute;
+  visibility:hidden;
+}
+
+
+/******************************************************/
+
+.button1 {
+	border:1px solid black;
+	height:10px;
+	width:5px;
+	border-top-left-radius: 5px 5px;
+	border-bottom-left-radius: 5px 5px;
+	text-align: center;
+	position: absolute;
+	left:3.95in;
+	top:4.2in;
+	background: black;
+
+}
+
+
+.bt:hover{
+
+	opacity: 0.4;
+}
+
+.button2 {
+	border:1px solid black;
+	height:10px;
+	width:5px;
+	border-top-right-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+	text-align: center;
+	position: absolute;
+	left:5.33in;
+	top:4.2in;
+	background: black;
+
+}
+
+.button3 {
+	border:1px solid black;
+	height:10px;
+	width:10px;
+	border-radius: 5px;
+	text-align: center;
+	position: absolute;
+	left:4.6in;
+	top:5.23in;
+	background: black;
+
+}
+
+#imgProfile{
+  left:4.32in;
+  top:4.2in;
+  position: absolute;
+}
+#hologame{
+  left:4.32in;
+  top:4.2in;
+  position: absolute;
+  visibility:hidden;
+}
+#holograma{
+  left:4.32in;
+  top:4.2in;
+  position: absolute;
+  visibility:hidden;
+}
+
+#arrow_right{
+  left:5.01in;
+  top:4.5in;
+  position: absolute;
+
+}
+#arrow_left{
+  left:4.17in;
+  top:4.5in;
+  position: absolute;
+}
+#arrow_right:hover{
+	opacity: 0.4;
+}
+#arrow_left:hover{
+	opacity: 0.4;
+}
+
+#state1{
+  left:4.5in;
+  top:4.9in;
+  position: absolute;
+}
+
+#Saldo_inicial{
+  left:4.3in;
+  top:4.2in;
+  position: absolute;
+  visibility:hidden;
+}
+
+#pay{
+  left:4.25in;
+  top:4.55in;
+  position: absolute;
+  visibility:hidden;
+}
+#edit{
+	left:4.9in;
+  top:5in;
+  position: absolute;
+  visibility:hidden;
+}
+
+
+#fingerprint{
+	left:4.3in;
+  top:4.2in;
+  position: absolute;
+  visibility:hidden;
+}
+
+#sucesso{
+	left:4.25in;
+  top:4.2in;
+  position: absolute;
+  visibility:hidden;
+
+}
+#OK{
+  left:4.67in;
+  top:4.96in;
+  position: absolute;
+  visibility:hidden;
+
+}
