@@ -1,8 +1,26 @@
+div.header{
+	background-color:rgb(52, 73, 94);}
 h2.title{
 	color: white;
 	text-align: center;}
-div.row{
-	background-color:rgb(52, 73, 94);}
-div.frame{
-	width:1.06in;
-	height:1.06in;}
+
+div.content{
+	background-color: rgb(52, 73, 94);;}
+div.dashboard{
+	padding: 4px 3px 3px 8px;
+	background-color: rgb(41, 128, 185);}
+h3.dashboard{
+	color: white;
+	text-align: center;}
+div.framee{
+	padding: 2px;}
+h3.framee{
+	color: white;
+	text-align: center;}
+button{
+	margin-left: 5px;
+	margin-right: 5px; 
+	background-color: white;
+	text-align: center;
+	width: 100px;
+}
