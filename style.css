@@ -1,56 +1,27 @@
+div.header{
+	background-color:rgb(52, 73, 94);}
 h2.title{
 	color: white;
 	text-align: center;}
-div.row{
-	background-color:rgb(52, 73, 94);}
-div.frame{
-	width:1.06in;
-	height:1.06in;}
-
-#bracelete{
-	left:4in;
-  top:4in;
-	width: 1.10in;
-	height:1.11in;
-	position: absolute;
-
-}
-#layout_baixo{
-	z-index: -1;
-	position: absolute;
-}
-.right{
-  width:0.2in;
-  height:0.8in;
-  top: 0.2in; 
-
-}
-
-#carousel-example-generic{
-
-
-}
-.left{
-
-	left: 0.04in;
-  width:0.3in;
-  height:0.8in;
-  top: 0.15in;
-}
-
-.right{
-	right:2in;
-  width:0.3in;
-  height:0.8in;
-  top: 0.15in;
-}
-.carousel-inner{
-	top:0.08in;
-	left:0.07in;
-}
-.carousel-indicators{
-	left:0.55in;
-	top:0.75in;
+div.content{
+	background-color: rgb(52, 73, 94);;}
+div.dashboard{
+	padding: 4px 3px 3px 8px;
+	background-color: rgb(41, 128, 185);}
+h3.dashboard{
+	color: white;
+	text-align: center;}
+div.framee{
+	padding: 2px;}
+h3.framee{
+	color: white;
+	text-align: center;}
+button{
+	margin-left: 5px;
+	margin-right: 5px; 
+	background-color: white;
+	text-align: center;
+	width: 100px;
 }
 .carousel-fade {
   .carousel-inner {
@@ -58,7 +29,6 @@ div.frame{
       opacity: 0;
       transition-property: opacity;
     }
-
     .active {
       opacity: 1;
     }
@@ -81,3 +51,4 @@ div.frame{
 #Menu_NFC{
 	right:0.1in;
 }
+
