@@ -12,83 +12,59 @@ var txt="Pagamento";
 function NFC(){
 	if(locked==0){
 	document.getElementById("imgProfile").style.visibility="hidden";
-	
+	document.getElementById("state1").style.visibility="hidden";
+	document.getElementById("arrow_right").style.visibility="hidden";
+	document.getElementById("arrow_left").style.visibility="hidden";
+	document.getElementById("loading").style.visibility="hidden";
 
-	document.getElementById("pay").style.visibility="visible";
-	document.getElementById("Saldo_inicial").style.visibility="visible";
-	document.getElementById("edit").style.visibility="visible";
-	document.getElementById("passo1").style.visibility="visible";
+	
+	document.getElementById("auth_text").style.visibility="visible";
+	document.getElementById("fingerprint").style.visibility="visible";
+
 
 	state = state_act;
 	state_act="NFC";
 }
-
 }
-
-
-function Pay(){
+function finger(){
 	if(locked==0){
-	document.getElementById("NFC_1").style.visibility="hidden";
-		document.getElementById("NFC_3").style.visibility="hidden";
-
-
-
-	/*document.getElementById("boxerr").style.backgroundImage = "url('sources/fingerprint.jpg')";*/
 	
-	document.getElementById("NFC_2").style.visibility="visible";
+	document.getElementById("auth_text").style.visibility="hidden";
+	document.getElementById("fingerprint").style.visibility="hidden";
+
+
+	document.getElementById("loading").style.visibility="visible";
+	document.getElementById("sensor_text").style.visibility="visible";
 	state=state_act;
-	state_act="Pay";
+	state_act="finger";
 	}
 }
 
 
-function Edit(){
-	if(locked==0){
-	document.getElementById("NFC_1").style.visibility="hidden";
-
-	document.getElementById("fingerprint").style.visibility="visible";
-	state=state_act;
-	state_act="edit";	
-	}
-}
-
-
-
-function fingerprint(){
+function loading(){
 		if(locked==0){
-	document.getElementById("NFC_1").style.visibility="hidden";
+
+
+	state = state_act;
+	state_act="loading";
+}
+}
+
+	/*document.getElementById("boxerr").style.backgroundImage = "url('sources/fingerprint.jpg')";*/
 
 
 	/*document.getElementById("boxerr").style.backgroundImage = "url('sources/fingerprint.jpg')";*/
-	
-	document.getElementById("fingerprint_alt").style.visibility="visible";
-	document.getElementById("passo3").style.visibility="visible";
-	state=state_act;
-	state_act="Pay";
-}
-}
-
-function Saldo(){}
-
-function Payment_completed(){
-	if(locked==0){
-	document.getElementById("NFC_2").style.visibility="hidden";
 
 
-	document.getElementById("sucesso").style.visibility="visible";
-	document.getElementById("Ok").style.visibility="visible";
-	document.getElementById("passo3").style.visibility="visible";
-
-		state=state_act;
-	state_act="payment";
-	}
-}
 
 
 /*******************ECRÃS DO MENU PRINCIPAL ********************************/
 
 function Menu_NFC(){
 	if(locked==0){
+			document.getElementById("loading").style.visibility="hidden";
+	document.getElementById("auth_text").style.visibility="hidden";
+	document.getElementById("fingerprint").style.visibility="hidden";
 	document.getElementById("imgProfile").style.visibility="hidden";
 	document.getElementById("holograma").style.visibility="hidden";
 	document.getElementById("state2").style.visibility="hidden";
