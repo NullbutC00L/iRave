@@ -91,10 +91,11 @@ function Menu_NFC(){
 	if(locked==0){
 	document.getElementById("imgProfile").style.visibility="hidden";
 	document.getElementById("holograma").style.visibility="hidden";
-	document.getElementById("state").style.visibility="hidden";
+	document.getElementById("state2").style.visibility="hidden";
+
 
 	document.getElementById("imgProfile").style.visibility="visible";
-	document.getElementById("state").style.visibility="visible";
+	document.getElementById("state1").style.visibility="visible";
 	document.getElementById("arrow_right").style.visibility="visible";
 	document.getElementById("arrow_left").style.visibility="visible";
 	state=state_act;
@@ -105,9 +106,10 @@ function Menu_NFC(){
 function Menu_holograma(){
 	if(locked==0){
 	document.getElementById("imgProfile").style.visibility="hidden";
+	document.getElementById("state1").style.visibility="hidden";
 
 	document.getElementById("holograma").style.visibility="visible";
-	document.getElementById("state").style.visibility="visible";
+	document.getElementById("state2").style.visibility="visible";
 	document.getElementById("arrow_right").style.visibility="visible";
 	document.getElementById("arrow_left").style.visibility="visible";	
 		state=state_act;
