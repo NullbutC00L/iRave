@@ -15,7 +15,6 @@ function NFC(){
 	document.getElementById("state1").style.visibility="hidden";
 	document.getElementById("arrow_right").style.visibility="hidden";
 	document.getElementById("arrow_left").style.visibility="hidden";
-	document.getElementById("loading").style.visibility="hidden";
 
 	
 	document.getElementById("auth_text").style.visibility="visible";
@@ -28,7 +27,6 @@ function NFC(){
 }
 function finger(){
 	if(locked==0){
-	
 	document.getElementById("auth_text").style.visibility="hidden";
 	document.getElementById("fingerprint").style.visibility="hidden";
 
@@ -40,15 +38,26 @@ function finger(){
 	}
 }
 
+function sucesso(){
+	if(locked==0){
+	
+	document.getElementById("sensor_text").style.visibility="hidden";
+	document.getElementById("loading").style.visibility="hidden";
+	document.getElementById("thephoto").style.visibility="hidden";
+	
 
-function loading(){
-		if(locked==0){
 
 
-	state = state_act;
-	state_act="loading";
+	document.getElementById("cartao").style.visibility="visible";
+	document.getElementById("sucesso_text").style.visibility="visible";
+	document.getElementById("certo").style.visibility="visible";
+	state=state_act;
+	state_act="finger";
+	}
 }
-}
+
+
+
 
 	/*document.getElementById("boxerr").style.backgroundImage = "url('sources/fingerprint.jpg')";*/
 
@@ -62,6 +71,9 @@ function loading(){
 
 function Menu_NFC(){
 	if(locked==0){
+		document.getElementById("cartao").style.visibility="hidden";
+	document.getElementById("sucesso_text").style.visibility="hidden";
+	document.getElementById("certo").style.visibility="hidden";
 			document.getElementById("loading").style.visibility="hidden";
 	document.getElementById("auth_text").style.visibility="hidden";
 	document.getElementById("fingerprint").style.visibility="hidden";
@@ -161,7 +173,40 @@ function back(){
         Menu_NFC();
 }
 }
+/******************************/
+function showImage(){
+  document.getElementById('quat').style.visibility = 'hidden';
+  if(count!=2){
+  	count++;
+    document.getElementById('uno').style.visibility = 'visible';
+	
+    var Timer = setInterval("um()",1000);
+    
+  }
+  else{
+   	sucesso();
+  }
+}
+function um(){
+  	  document.getElementById('uno').style.visibility = 'hidden';
+      document.getElementById('dos').style.visibility = 'visible';
 
+      var Timer = setInterval("dois()",1000);
+}
+
+function dois(){
+  document.getElementById('dos').style.visibility = 'hidden'
+      document.getElementById('tres').style.visibility = 'visible';
+
+      var Timer = setInterval("tres()",1000);
+}
+
+function tres(){
+  document.getElementById('tres').style.visibility = 'hidden';
+  document.getElementById('quat').style.visibility = 'visible';
+
+  var Timer = setInterval("showImage()",1000);
+}
 
 /*function rock(){
     document.getElementById('image1').style.display = 'block';
