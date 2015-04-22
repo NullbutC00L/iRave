@@ -15,6 +15,8 @@ function NFC(){
 	document.getElementById("state1").style.visibility="hidden";
 	document.getElementById("arrow_right").style.visibility="hidden";
 	document.getElementById("arrow_left").style.visibility="hidden";
+	document.getElementById("loading").style.visibility="hidden";
+	document.getElementById("sensor_text").style.visibility="hidden";
 
 	
 	document.getElementById("auth_text").style.visibility="visible";
@@ -52,9 +54,32 @@ function sucesso(){
 	document.getElementById("sucesso_text").style.visibility="visible";
 	document.getElementById("certo").style.visibility="visible";
 	state=state_act;
-	state_act="finger";
+	state_act="sucesso";
 	}
 }
+
+
+/*******************FUNCIONALIDADE HOLOGRAMA ********************************/
+
+
+function holo(){
+	if(locked==0){
+		document.getElementById("holograma").style.visibility="hidden";
+		document.getElementById("state2").style.visibility="hidden";
+		document.getElementById("arrow_right").style.visibility="hidden";
+		document.getElementById("arrow_left").style.visibility="hidden";	
+
+		document.getElementById("cartaz1").style.visibility="visible";
+		document.getElementById("cartaz2").style.visibility="visible";
+		document.getElementById("cartaz3").style.visibility="visible";
+		document.getElementById("cartaz4").style.visibility="visible";
+
+		state=state_act;
+		state_act="holograma";
+	}
+}
+
+
 
 
 
@@ -71,15 +96,19 @@ function sucesso(){
 
 function Menu_NFC(){
 	if(locked==0){
-		document.getElementById("cartao").style.visibility="hidden";
+	document.getElementById("cartao").style.visibility="hidden";
 	document.getElementById("sucesso_text").style.visibility="hidden";
 	document.getElementById("certo").style.visibility="hidden";
-			document.getElementById("loading").style.visibility="hidden";
+	document.getElementById("loading").style.visibility="hidden";
 	document.getElementById("auth_text").style.visibility="hidden";
 	document.getElementById("fingerprint").style.visibility="hidden";
 	document.getElementById("imgProfile").style.visibility="hidden";
 	document.getElementById("holograma").style.visibility="hidden";
 	document.getElementById("state2").style.visibility="hidden";
+	document.getElementById("sensor_text").style.visibility="hidden";
+	document.getElementById("loading").style.visibility="hidden";
+	document.getElementById("thephoto").style.visibility="hidden";
+
 
 
 	document.getElementById("imgProfile").style.visibility="visible";
@@ -141,33 +170,22 @@ function Block(){
 function back(){
 	switch(state) {
     case "NFC":
-        Menu_NFC()
-        NFC();
+        Menu_NFC();
         break;
-    case "Pay":
+    case "finger":
+    	Menu_NFC();
+    	NFC();
+        break;
+    case "sucesso":
     	Menu_NFC()
         NFC();
-        Pay();
-        break;
-    case "edit":
-    	Menu_NFC()
-        NFC();
-        Edit();
-        break;
-    case "payment":
-    	Menu_NFC()
-        NFC();
-        Pay();
-        Payment_completed();
+        finger();
         break;
     case "Menu1":
         Menu_NFC();
         break;
     case "Menu2":
     	Menu_holograma();
-    	break;
-    case "Menu3":
-    	Menu_jogo();
     	break;
     default:
         Menu_NFC();

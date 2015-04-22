@@ -23,6 +23,7 @@ button{
 	text-align: center;
 	width: 100px;
 }
+
 .brace{
 	position: absolute;
 	top:2in;
@@ -248,6 +249,55 @@ button{
 
 }
 
+/*HOLOGRAMA*/
 
+#cartaz1{
+	position: absolute;
+	visibility: hidden;
+	z-index: 2;
+	width:0.58in;
+	height: 0.45in;
+	top:0.3in;
+	left:0.18in;
+	border:solid black 0.01in;
+
+
+}
+#cartaz2{
+	position: absolute;
+	visibility: hidden;
+	z-index: 2;
+	width:0.58in;
+	height:0.45in;
+	top:0.3in;
+	left:0.8in;
+	border:solid black 0.01in;
+
+}
+#cartaz3{
+	position: absolute;
+	visibility: hidden;
+	z-index: 2;
+	width: 0.58in;
+	height:0.45in;
+	top:0.76in;
+	left:0.18in;
+	border:solid black 0.01in;
+
+}
+#cartaz4{
+	position: absolute;
+	visibility: hidden;
+	z-index: 2;
+	width: 0.58in;
+	height: 0.45in;
+	top:0.76in;
+	left:0.8in;
+	border:solid black 0.01in;
+
+}
+#feixe{
+	visibility: hidden;
+}
 
 
