@@ -74,6 +74,10 @@ function holo(){
 		document.getElementById("cartaz2").style.opacity="0.99";
 		document.getElementById("cartaz3").style.opacity="0.99";
 		document.getElementById("cartaz4").style.opacity="0.99";
+		document.getElementById("cartaz1").style.visibility="hidden";
+		document.getElementById("cartaz2").style.visibility="hidden";
+		document.getElementById("cartaz3").style.visibility="hidden";
+		document.getElementById("cartaz4").style.visibility="hidden";
 		document.getElementById("holograma").style.visibility="hidden";
 		document.getElementById("state2").style.visibility="hidden";
 		document.getElementById("arrow_right").style.visibility="hidden";
@@ -335,6 +339,9 @@ function back(){
         Menu_NFC();
         break;
     case "Menu2":
+    	Menu_holograma();
+    	break;
+    case "holograma":
     	Menu_holograma();
     	break;
     case "back":
