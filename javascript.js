@@ -250,60 +250,68 @@ function parar(){
 function Menu_NFC(){
 	if(locked==0){
 		document.getElementById("parar").style.visibility="hidden";
-	document.getElementById("cartaz1_alt").style.visibility="hidden";
-	document.getElementById("cartaz2_alt").style.visibility="hidden";
-	document.getElementById("cartaz3_alt").style.visibility="hidden";
-	document.getElementById("cartaz4_alt").style.visibility="hidden";
-	document.getElementById("start").style.visibility="hidden";
-	document.getElementById("cartaz1").style.opacity="0.99";
-	document.getElementById("cartaz2").style.opacity="0.99";
-	document.getElementById("cartaz3").style.opacity="0.99";
-	document.getElementById("cartaz4").style.opacity="0.99";
-	document.getElementById("cartaz1").style.visibility="hidden";
-	document.getElementById("cartaz2").style.visibility="hidden";
-	document.getElementById("cartaz3").style.visibility="hidden";
-	document.getElementById("cartaz4").style.visibility="hidden";
-	document.getElementById("cartao").style.visibility="hidden";
-	document.getElementById("sucesso_text").style.visibility="hidden";
-	document.getElementById("certo").style.visibility="hidden";
-	document.getElementById("loading").style.visibility="hidden";
-	document.getElementById("auth_text").style.visibility="hidden";
-	document.getElementById("fingerprint").style.visibility="hidden";
-	document.getElementById("imgProfile").style.visibility="hidden";
-	document.getElementById("holograma").style.visibility="hidden";
-	document.getElementById("state2").style.visibility="hidden";
-	document.getElementById("sensor_text").style.visibility="hidden";
-	document.getElementById("loading").style.visibility="hidden";
-	document.getElementById("thephoto").style.visibility="hidden";
-	document.getElementById("help_main_menu").style.visibility="hidden";
-	document.getElementById("help_autenticacao").style.visibility="hidden";
-	document.getElementById("help_sucesso").style.visibility="hidden";
-	document.getElementById("help_loading").style.visibility="hidden";
+		document.getElementById("cartaz1_alt").style.visibility="hidden";
+		document.getElementById("cartaz2_alt").style.visibility="hidden";
+		document.getElementById("cartaz3_alt").style.visibility="hidden";
+		document.getElementById("cartaz4_alt").style.visibility="hidden";
+		document.getElementById("start").style.visibility="hidden";
+		document.getElementById("cartaz1").style.opacity="0.99";
+		document.getElementById("cartaz2").style.opacity="0.99";
+		document.getElementById("cartaz3").style.opacity="0.99";
+		document.getElementById("cartaz4").style.opacity="0.99";
+		document.getElementById("cartaz1").style.visibility="hidden";
+		document.getElementById("cartaz2").style.visibility="hidden";
+		document.getElementById("cartaz3").style.visibility="hidden";
+		document.getElementById("cartaz4").style.visibility="hidden";
+		document.getElementById("cartao").style.visibility="hidden";
+		document.getElementById("sucesso_text").style.visibility="hidden";
+		document.getElementById("certo").style.visibility="hidden";
+		document.getElementById("loading").style.visibility="hidden";
+		document.getElementById("auth_text").style.visibility="hidden";
+		document.getElementById("fingerprint").style.visibility="hidden";
+		document.getElementById("imgProfile").style.visibility="hidden";
+		document.getElementById("holograma").style.visibility="hidden";
+		document.getElementById("state2").style.visibility="hidden";
+		document.getElementById("sensor_text").style.visibility="hidden";
+		document.getElementById("loading").style.visibility="hidden";
+		document.getElementById("thephoto").style.visibility="hidden";
+		document.getElementById("help_main_menu").style.visibility="hidden";
+		document.getElementById("help_autenticacao").style.visibility="hidden";
+		document.getElementById("help_sucesso").style.visibility="hidden";
+		document.getElementById("help_loading").style.visibility="hidden";
+		document.getElementById("help_holograma").style.visibility="hidden";
+		document.getElementById("help_holograma_1").style.visibility="hidden";
 	
 
 
-	document.getElementById("imgProfile").style.visibility="visible";
-	document.getElementById("state1").style.visibility="visible";
-	document.getElementById("arrow_right").style.visibility="visible";
-	document.getElementById("arrow_left").style.visibility="visible";
-	state=state_act;
-	state_act="Menu1";
+		document.getElementById("imgProfile").style.visibility="visible";
+		document.getElementById("state1").style.visibility="visible";
+		document.getElementById("arrow_right").style.visibility="visible";
+		document.getElementById("arrow_left").style.visibility="visible";
+		state=state_act;
+		state_act="Menu1";
 	}
 }
 
 function Menu_holograma(){
 	if(locked==0){
-			document.getElementById("cartaz1").style.visibility="hidden";
+		document.getElementById("cartaz1").style.visibility="hidden";
 		document.getElementById("cartaz2").style.visibility="hidden";
 		document.getElementById("cartaz3").style.visibility="hidden";
 		document.getElementById("cartaz4").style.visibility="hidden";
-	document.getElementById("imgProfile").style.visibility="hidden";
-	document.getElementById("state1").style.visibility="hidden";
+		document.getElementById("imgProfile").style.visibility="hidden";
+		document.getElementById("state1").style.visibility="hidden";
+		document.getElementById("help_main_menu").style.visibility="hidden";
+		document.getElementById("help_autenticacao").style.visibility="hidden";
+		document.getElementById("help_sucesso").style.visibility="hidden";
+		document.getElementById("help_loading").style.visibility="hidden";
+		document.getElementById("help_holograma").style.visibility="hidden";
+		document.getElementById("help_holograma_1").style.visibility="hidden";
 
-	document.getElementById("holograma").style.visibility="visible";
-	document.getElementById("state2").style.visibility="visible";
-	document.getElementById("arrow_right").style.visibility="visible";
-	document.getElementById("arrow_left").style.visibility="visible";	
+		document.getElementById("holograma").style.visibility="visible";
+		document.getElementById("state2").style.visibility="visible";
+		document.getElementById("arrow_right").style.visibility="visible";
+		document.getElementById("arrow_left").style.visibility="visible";	
 		state=state_act;
 		state_act="Menu2";
 	}	
@@ -330,8 +338,8 @@ function Block(){
 		document.getElementById("main_menu").style.visibility="hidden";
 
 
-	/*document.getElementById("locked_screen").style.visibility="visible";*/
-	document.getElementById("boxe").style.backgroundImage = "url('sources/locked_screen.png')";
+		/*document.getElementById("locked_screen").style.visibility="visible";*/
+		document.getElementById("boxe").style.backgroundImage = "url('sources/locked_screen.png')";
 	
 	}
 	else{
@@ -428,6 +436,15 @@ function help(){
 		document.getElementById("state1").style.visibility="hidden";
 		document.getElementById("arrow_right").style.visibility="hidden";
 		document.getElementById("arrow_left").style.visibility="hidden";
+		document.getElementById("cartaz1").style.visibility="hidden";
+		document.getElementById("cartaz2").style.visibility="hidden";
+		document.getElementById("cartaz3").style.visibility="hidden";
+		document.getElementById("cartaz4").style.visibility="hidden";
+		document.getElementById("cartaz1_alt").style.visibility="hidden";
+		document.getElementById("cartaz2_alt").style.visibility="hidden";
+		document.getElementById("cartaz3_alt").style.visibility="hidden";
+		document.getElementById("cartaz4_alt").style.visibility="hidden";
+		document.getElementById("start").style.visibility="hidden";
 
 		switch(state_act){
 		    case "NFC":
@@ -443,8 +460,23 @@ function help(){
 		        document.getElementById("help_main_menu").style.visibility="visible";
 		        break;
 		    case "Menu2":
+		    	document.getElementById("help_main_menu").style.visibility="visible";
+		    	break;
+        	case "holograma":
 		    	document.getElementById("help_holograma").style.visibility="visible";
 		    	break;
+	    	case "press1":
+	    		document.getElementById("help_holograma_1").style.visibility="visible";
+		    	break
+	    	case "press2":
+	    		document.getElementById("help_holograma_1").style.visibility="visible";
+		    	break
+	    	case "press3":
+	    		document.getElementById("help_holograma_1").style.visibility="visible";
+		    	break
+	    	case "press4":
+	    		document.getElementById("help_holograma_1").style.visibility="visible";
+		    	break
 		}
 	}
 }
