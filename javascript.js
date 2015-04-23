@@ -9,6 +9,8 @@ var audio = new Audio('sounds/beep.wav');
 
 var holi="";
 
+var Help=0;
+
 
 /*******************FUNCIONALIDADE NFC ********************************/
 function NFC(){
@@ -33,6 +35,7 @@ function NFC(){
 }
 function finger(){
 	if(locked==0){
+		document.getElementById("help_loading").style.visibility="hidden";
 	document.getElementById("auth_text").style.visibility="hidden";
 	document.getElementById("fingerprint").style.visibility="hidden";
 	document.querySelector(".framee").style.backgroundColor = "white";
@@ -92,7 +95,8 @@ function holo(){
 		document.getElementById("holograma").style.visibility="hidden";
 		document.getElementById("state2").style.visibility="hidden";
 		document.getElementById("arrow_right").style.visibility="hidden";
-		document.getElementById("arrow_left").style.visibility="hidden";	
+		document.getElementById("arrow_left").style.visibility="hidden";
+		document.getElementById("help_holograma").style.visibility="hidden";	
 
 		document.getElementById("cartaz1").style.visibility="visible";
 		document.getElementById("cartaz2").style.visibility="visible";
@@ -107,6 +111,7 @@ function holo(){
 function press1(){
 	if(locked==0){
 		holi="1";
+		document.getElementById("help_holograma_1").style.visibility="hidden";
 		document.getElementById("cartaz1").style.visibility="hidden";
 		document.getElementById("cartaz1_alt").style.visibility="visible";
 		document.getElementById("start").style.visibility="visible";
@@ -120,6 +125,7 @@ function press1(){
 function press2(){
 	if(locked==0){
 		holi="2";
+		document.getElementById("help_holograma_1").style.visibility="hidden";
 		document.getElementById("cartaz2").style.visibility="hidden";
 		document.getElementById("cartaz2_alt").style.visibility="visible";
 		document.getElementById("start").style.visibility="visible";
@@ -133,6 +139,7 @@ function press2(){
 function press3(){
 	if(locked==0){
 		holi="3";
+		document.getElementById("help_holograma_1").style.visibility="hidden";
 		document.getElementById("cartaz3").style.visibility="hidden";
 		document.getElementById("cartaz3_alt").style.visibility="visible";
 		document.getElementById("start").style.visibility="visible";
@@ -146,6 +153,7 @@ function press3(){
 function press4(){
 	if(locked==0){
 		holi="4";
+		document.getElementById("help_holograma_1").style.visibility="hidden";
 		document.getElementById("cartaz4").style.visibility="hidden";
 		document.getElementById("cartaz4_alt").style.visibility="visible";
 		document.getElementById("start").style.visibility="visible";
@@ -256,6 +264,10 @@ function parar(){
 
 function Menu_NFC(){
 	if(locked==0){
+		parar();
+		document.querySelector(".framee").style.backgroundColor = "rgb(52, 73, 94)";
+			document.querySelector(".header").style.backgroundColor = "rgb(52, 73, 94)";
+   			document.querySelector(".dashboard").style.backgroundColor = "rgb(41, 128, 185)";
 		document.getElementById("parar").style.visibility="hidden";
 		document.getElementById("cartaz1_alt").style.visibility="hidden";
 		document.getElementById("cartaz2_alt").style.visibility="hidden";
@@ -358,33 +370,118 @@ function Block(){
 }
 
 function back(){
+	if (Help==0){
+		switch(state_act) {
+	    case "NFC":
+	        Menu_NFC();
+	        break;
+	    case "finger":
+	    	document.querySelector(".framee").style.backgroundColor = "rgb(52, 73, 94)";
+			document.querySelector(".header").style.backgroundColor = "rgb(52, 73, 94)";
+   			document.querySelector(".dashboard").style.backgroundColor = "rgb(41, 128, 185)";
+	    	NFC();
+	        break;
+	    case "sucesso":
+	        Menu_NFC();
+	        break;
+	    case "Menu1":
+	        Menu_NFC();
+	        break;
+	    case "Menu2":
+	    	Menu_holograma();
+	    	break;
+	    case "holograma":
+	    	Menu_holograma();
+	    	break;
+	    case "back":
+	    	Menu_holograma();
+	    	holo();
+	    	break
+	   	case "reproduzir":
+	   		switch(holi){
+	   			case "1":
+	   				parar();
+	   				press1();
+	   			break;
+	   			case "2":
+	   				parar();
+	   				press2();
+	   			break;
+	   			case "3":
+	   				parar();
+	   				press3();
+	   			break;
+	   			case "4":
+	   				parar();
+	   				press4();
+	   			break;
+
+	   		}
+	   		
+	   		
+	   		break;
+
+	    default:
+	        Menu_holograma();
+	    	holo();
+		}
+	}
+	//back para o caso de anes ter estado no menu de
 	switch(state_act) {
-    case "NFC":
-        Menu_NFC();
-        break;
-    case "finger":
-    	NFC();
-        break;
-    case "sucesso":
-        Menu_NFC();
-        break;
-    case "Menu1":
-        Menu_NFC();
-        break;
-    case "Menu2":
-    	Menu_holograma();
-    	break;
-    case "holograma":
-    	Menu_holograma();
-    	break;
-    case "back":
-    	Menu_holograma();
-    	holo();
-    	break
-    default:
-        Menu_holograma();
-    	holo();
-}
+	    case "NFC":
+	        NFC();
+	        Help=0;
+	        break;
+	    case "finger":
+	    	finger();
+	    	
+	    	Help=0;
+	        break;
+	    case "sucesso":
+	        Menu_NFC();
+	        Help=0;
+	        break;
+	    case "Menu1":
+	        Menu_NFC();
+	        Help=0;
+	        break;
+
+	    case "Menu2":
+	    	Menu_holograma();
+	    	Help=0;
+	    	break;
+	    case "holograma":
+	    	Help=0;
+	    	holo()
+	    	break;
+	    case "back":
+	    	Help=0;
+	    	Menu_holograma();
+	    	holo();
+	    	break
+	    case "press1":
+	   		Help=0;
+	   		
+	    	press1();
+
+	    	break;
+	    case "press2":
+	   		Help=0;
+	    	press2();
+	    	break;
+	    case "press3":
+	   		Help=0;
+	    	press3();
+	    	break;
+	    case "press4":
+	   		Help=0;
+	    	press4();
+	    	break;
+	    default:
+	        Help=0;
+	        Menu_holograma();
+	    	holo();
+		}
 }
 /******************************/
 
@@ -464,32 +561,42 @@ function help(){
 		switch(state_act){
 		    case "NFC":
 				document.getElementById("help_autenticacao").style.visibility="visible";		
+		        Help=1;
 		        break;
 		    case "finger":
+		    	Help=1;
 		    	document.getElementById("help_loading").style.visibility="visible";
 		        break;
 		    case "sucesso":
+		    	Help=1;
 		    	document.getElementById("help_sucesso").style.visibility="visible";
 		        break;
 		    case "Menu1":
+		        Help=1;
 		        document.getElementById("help_main_menu").style.visibility="visible";
 		        break;
 		    case "Menu2":
+		    	Help=1;
 		    	document.getElementById("help_main_menu").style.visibility="visible";
 		    	break;
         	case "holograma":
+		    	Help=1;
 		    	document.getElementById("help_holograma").style.visibility="visible";
 		    	break;
 	    	case "press1":
+	    		Help=1;
 	    		document.getElementById("help_holograma_1").style.visibility="visible";
 		    	break
 	    	case "press2":
+	    		Help=1;
 	    		document.getElementById("help_holograma_1").style.visibility="visible";
 		    	break
 	    	case "press3":
+	    		Help=1;
 	    		document.getElementById("help_holograma_1").style.visibility="visible";
 		    	break
 	    	case "press4":
+	    		Help=1;
 	    		document.getElementById("help_holograma_1").style.visibility="visible";
 		    	break
 		}
