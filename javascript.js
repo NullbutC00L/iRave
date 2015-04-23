@@ -25,6 +25,9 @@ function finger(){
 	if(locked==0){
 	document.getElementById("auth_text").style.visibility="hidden";
 	document.getElementById("fingerprint").style.visibility="hidden";
+	document.querySelector(".framee").style.backgroundColor = "white";
+    document.querySelector(".dashboard").style.backgroundColor = "white";
+	document.querySelector(".header").style.backgroundColor = "white";
 
 
 	document.getElementById("loading").style.visibility="visible";
@@ -40,8 +43,10 @@ function sucesso(){
 	document.getElementById("sensor_text").style.visibility="hidden";
 	document.getElementById("loading").style.visibility="hidden";
 	document.getElementById("thephoto").style.visibility="hidden";
-	
-
+	document.querySelector(".framee").style.backgroundColor = "rgb(52, 73, 94)";
+	document.querySelector(".header").style.backgroundColor = "rgb(52, 73, 94)";
+    document.querySelector(".dashboard").style.backgroundColor = "rgb(41, 128, 185)";
+	document.getElementById('quat').style.visibility = 'hidden';
 
 
 	document.getElementById("cartao").style.visibility="visible";
@@ -187,19 +192,6 @@ function back(){
 }
 }
 /******************************/
-function showImage(){
-  document.getElementById('quat').style.visibility = 'hidden';
-  if(count!=2){
-  	count++;
-    document.getElementById('uno').style.visibility = 'visible';
-	
-    var Timer = setInterval("um()",1000);
-    
-  }
-  else{
-   	sucesso();
-  }
-}
 
 /* Animações */
 function um(){
@@ -220,16 +212,24 @@ function tres(){
   document.getElementById('tres').style.visibility = 'hidden';
   document.getElementById('quat').style.visibility = 'visible';
 
-  var Timer = setInterval("showImage()",1000);
+  var Timer = setInterval("sucesso()",1000);
 }
 
-/*function rock(){
-    document.getElementById('image1').style.display = 'block';
-    document.getElementById('image2').style.display = 'none';
-    document.getElementById('image3').style.display = 'none';
-}
-*/
+// function showImage(){
+//   document.getElementById('quat').style.visibility = 'hidden';
+//   if(count!=2){
+//   	count++;
+//     document.getElementById('uno').style.visibility = 'visible';
+	
+//     var Timer = setInterval("um()",1000);
+    
+//   }
+//   else{
+//    	sucesso();
+//   }
+// }
 
+/***** DISPLAY HELP FUNCT ******/
 function help(){
 	if(locked==0){
 		document.getElementById("cartao").style.visibility="hidden";
