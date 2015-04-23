@@ -249,7 +249,7 @@ function parar(){
 
 function Menu_NFC(){
 	if(locked==0){
-		document.getElementById("parar").style.visibility="hidden";
+	document.getElementById("parar").style.visibility="hidden";
 	document.getElementById("cartaz1_alt").style.visibility="hidden";
 	document.getElementById("cartaz2_alt").style.visibility="hidden";
 	document.getElementById("cartaz3_alt").style.visibility="hidden";
@@ -263,6 +263,11 @@ function Menu_NFC(){
 	document.getElementById("cartaz2").style.visibility="hidden";
 	document.getElementById("cartaz3").style.visibility="hidden";
 	document.getElementById("cartaz4").style.visibility="hidden";
+	document.getElementById("cartaz1_grande").style.visibility="hidden";
+	document.getElementById("cartaz2_grande").style.visibility="hidden";
+	document.getElementById("cartaz3_grande").style.visibility="hidden";
+	document.getElementById("cartaz4_grande").style.visibility="hidden";
+		document.getElementById("feixe").style.visibility="hidden";
 	document.getElementById("cartao").style.visibility="hidden";
 	document.getElementById("sucesso_text").style.visibility="hidden";
 	document.getElementById("certo").style.visibility="hidden";
