@@ -11,7 +11,6 @@ var holi="";
 
 var Help=0;
 
-
 /*******************FUNCIONALIDADE NFC ********************************/
 function NFC(){
 	if(locked==0){
@@ -34,6 +33,7 @@ function NFC(){
 }
 }
 function finger(){
+	document.getElementById('sensor').style.display="block";
 	if(locked==0){
 		document.getElementById("help_loading").style.visibility="hidden";
 	document.getElementById("auth_text").style.visibility="hidden";
@@ -51,6 +51,7 @@ function finger(){
 }
 
 function sucesso(){
+
 	clearTimeout(Timer3);
 	if(locked==0){
 	  
@@ -217,7 +218,7 @@ function reproduzir(){
 				document.getElementById("cartaz2").style.visibility= "visible";
 				document.getElementById("cartaz3").style.visibility= "visible";
 				document.getElementById("cartaz1").style.visibility= "visible";
-				
+
 				document.getElementById("cartaz4_grande").style.visibility="visible";
 			break;
 			default:
@@ -604,6 +605,7 @@ function back(){
 
 /* Animações */
 function um(){
+		document.getElementById('sensor').style.display="none";
   	  document.getElementById('uno').style.visibility = 'hidden';
       document.getElementById('dos').style.visibility = 'visible';
 
