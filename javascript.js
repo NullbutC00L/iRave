@@ -293,6 +293,7 @@ function parar(){
 
 function Menu_NFC(){
 	if(locked==0){
+			Help=0;
 			parar();
 			document.querySelector(".framee").style.backgroundColor = "rgb(52, 73, 94)";
 			document.querySelector(".header").style.backgroundColor = "rgb(52, 73, 94)";
@@ -466,10 +467,7 @@ function back(){
 	    	
 	    	Help=0;
 	        break;
-	    case "sucesso":
-	        Menu_NFC();
-	        Help=0;
-	        break;
+	   
 	    case "Menu1":
 	        Menu_NFC();
 	        Help=0;
@@ -517,6 +515,15 @@ function back(){
 			document.getElementById("cartaz1").style.visibility= "visible";
 	    	press4();
 	    	break;
+	    case "sucesso":
+	    	Help=0;
+	    	document.getElementById("help_sucesso").style.visibility="hidden";
+	    	document.getElementById("cartao").style.visibility="visible";
+			document.getElementById("sucesso_text").style.visibility="visible";
+			document.getElementById("certo").style.visibility="visible";
+			state=state_act;
+			state_act="sucesso";
+	    	break;
 	    case "reproduzir":
 	   		Help=0;
 
@@ -549,7 +556,7 @@ function back(){
 	    	break;
 
 
-	     case "parar":
+	    case "parar":
 	   		Help=0;
 
 	   		switch(holi){
@@ -587,8 +594,6 @@ function back(){
 	   			break;
 
 	   		}
-	   		
-
 	    	
 	    	break;
 
