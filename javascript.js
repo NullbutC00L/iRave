@@ -264,11 +264,11 @@ function parar(){
 
 function Menu_NFC(){
 	if(locked==0){
-		parar();
-		document.querySelector(".framee").style.backgroundColor = "rgb(52, 73, 94)";
+			parar();
+			document.querySelector(".framee").style.backgroundColor = "rgb(52, 73, 94)";
 			document.querySelector(".header").style.backgroundColor = "rgb(52, 73, 94)";
    			document.querySelector(".dashboard").style.backgroundColor = "rgb(41, 128, 185)";
-		document.getElementById("parar").style.visibility="hidden";
+			document.getElementById("parar").style.visibility="hidden";
 		document.getElementById("cartaz1_alt").style.visibility="hidden";
 		document.getElementById("cartaz2_alt").style.visibility="hidden";
 		document.getElementById("cartaz3_alt").style.visibility="hidden";
@@ -509,6 +509,38 @@ function back(){
 	    	break;
 
 
+	     case "parar":
+	   		Help=0;
+
+	   		switch(holi){
+	   			case "1":
+	   				document.getElementById("help_holograma_1").style.visibility="hidden";
+	   				press1();
+	   				
+	   			break;
+	   			case "2":
+	   				document.getElementById("help_holograma_1").style.visibility="hidden";
+	   				press2();
+	   				
+	   			break;
+	   			case "3":
+	   				document.getElementById("help_holograma_1").style.visibility="hidden";
+	   				press3();
+	   				
+	   			break;
+	   			case "4":
+	   				document.getElementById("help_holograma_1").style.visibility="hidden";
+	   				press4();
+	   				
+	   			break;
+
+	   		}
+	   		
+
+	    	
+	    	break;
+
+
 
 	    	
 	    default:
@@ -638,6 +670,12 @@ function help(){
 		    	document.getElementById("help_holograma_2").style.visibility="visible";
 		    	document.getElementById("parar").style.visibility="hidden";
 		    	break;
+		    case "parar":
+		    	Help=1;
+		    	document.getElementById("help_holograma_1").style.visibility="visible";
+		    	document.getElementById("parar").style.visibility="hidden";
+		    	break;
+
 		}
 	}
 }
