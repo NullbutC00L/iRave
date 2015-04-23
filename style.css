@@ -363,20 +363,40 @@ button{
 
 #feixe{
 	visibility: hidden;
+	position: absolute;
+	top:-0.7in;
+	left:4in;
+
 }
 /*METE AQUI O ESTILO DOS CARTAZES GRANDES*/
 #cartaz1_grande{
 	visibility: hidden;
+	position: absolute;
+	top:0.2in;
+	left:7.2in;
 }
 
 #cartaz2_grande{
 	visibility: hidden;
+	position: absolute;
+	top:0.5in;
+	left:7in;
+	width: 5in;
+	height: 4in;
 }
 #cartaz3_grande{
 	visibility: hidden;
+	position: absolute;
+	top:1.5in;
+	left:7in;
 }
 #cartaz4_grande{
 	visibility: hidden;
+	position: absolute;
+	top:0.7in;
+	left:7.5in;
+	width: 4in;
+	height: 4in;
 }
 /********************************************************/
 
