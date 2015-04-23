@@ -4,6 +4,8 @@ var state="Menu1";
 var state_act="Menu1";
 var txt="Pagamento";
 
+var holi="";
+
 
 
 
@@ -64,6 +66,15 @@ function sucesso(){
 
 function holo(){
 	if(locked==0){
+		document.getElementById("cartaz1_alt").style.visibility="hidden";
+		document.getElementById("cartaz2_alt").style.visibility="hidden";
+		document.getElementById("cartaz3_alt").style.visibility="hidden";
+		document.getElementById("cartaz4_alt").style.visibility="hidden";
+		document.getElementById("start").style.visibility="hidden";
+		document.getElementById("cartaz1").style.opacity="0.99";
+		document.getElementById("cartaz2").style.opacity="0.99";
+		document.getElementById("cartaz3").style.opacity="0.99";
+		document.getElementById("cartaz4").style.opacity="0.99";
 		document.getElementById("holograma").style.visibility="hidden";
 		document.getElementById("state2").style.visibility="hidden";
 		document.getElementById("arrow_right").style.visibility="hidden";
@@ -78,6 +89,145 @@ function holo(){
 		state_act="holograma";
 	}
 }
+
+function press1(){
+	if(locked==0){
+		holi="1";
+		document.getElementById("cartaz1").style.visibility="hidden";
+		document.getElementById("cartaz1_alt").style.visibility="visible";
+		document.getElementById("start").style.visibility="visible";
+		document.getElementById("cartaz2").style.opacity = "0.2";
+		document.getElementById("cartaz3").style.opacity = "0.2";
+		document.getElementById("cartaz4").style.opacity = "0.2";
+		state=state_act;
+		state_act="press1";
+	}
+}
+function press2(){
+	if(locked==0){
+		holi="2";
+		document.getElementById("cartaz2").style.visibility="hidden";
+		document.getElementById("cartaz2_alt").style.visibility="visible";
+		document.getElementById("start").style.visibility="visible";
+		document.getElementById("cartaz3").style.opacity = "0.2";
+		document.getElementById("cartaz1").style.opacity = "0.2";
+		document.getElementById("cartaz4").style.opacity = "0.2";
+		state=state_act;
+		state_act="press2";
+	}
+}
+function press3(){
+	if(locked==0){
+		holi="3";
+		document.getElementById("cartaz3").style.visibility="hidden";
+		document.getElementById("cartaz3_alt").style.visibility="visible";
+		document.getElementById("start").style.visibility="visible";
+		document.getElementById("cartaz1").style.opacity = "0.2";
+		document.getElementById("cartaz2").style.opacity = "0.2";
+		document.getElementById("cartaz4").style.opacity = "0.2";
+		state=state_act;
+		state_act="press3";
+	}
+}
+function press4(){
+	if(locked==0){
+		holi="4";
+		document.getElementById("cartaz4").style.visibility="hidden";
+		document.getElementById("cartaz4_alt").style.visibility="visible";
+		document.getElementById("start").style.visibility="visible";
+		document.getElementById("cartaz1").style.opacity = "0.2";
+		document.getElementById("cartaz2").style.opacity = "0.2";
+		document.getElementById("cartaz3").style.opacity = "0.2";
+		state=state_act;
+		state_act="press4";
+	}
+}
+function reproduzir(){
+	if(locked==0){
+		document.getElementById("cartaz1").style.opacity = "0.99";
+		document.getElementById("cartaz1").style.opacity = "0.99";
+		document.getElementById("cartaz2").style.opacity = "0.99";
+		document.getElementById("cartaz3").style.opacity = "0.99";
+		document.getElementById("cartaz1").style.visibility="hidden";
+		document.getElementById("cartaz2").style.visibility="hidden";
+		document.getElementById("cartaz3").style.visibility="hidden";
+		document.getElementById("cartaz4").style.visibility="hidden";
+		document.getElementById("start").style.visibility="hidden";
+		document.getElementById("cartaz1_alt").style.visibility="hidden";
+		document.getElementById("cartaz2_alt").style.visibility="hidden";
+		document.getElementById("cartaz3_alt").style.visibility="hidden";
+		document.getElementById("cartaz4_alt").style.visibility="hidden";
+
+		document.getElementById("feixe").style.visibility="visible";
+		document.getElementById("parar").style.visibility="visible";
+
+		switch (holi){
+			case "1":
+				document.getElementById("cartaz1_grande").style.visibility="visible";
+			break;
+			case "2":
+				document.getElementById("cartaz2_grande").style.visibility="visible";
+			break;
+			case "3":
+				document.getElementById("cartaz3_grande").style.visibility="visible";
+			break;
+			case "4":
+				document.getElementById("cartaz4_grande").style.visibility="visible";
+			break;
+			default:
+
+		}
+		state=state_act;
+		state_act="reproduzir";
+
+	}
+}
+
+function parar(){
+		if(locked==0){
+			document.getElementById("cartaz1").style.opacity = "0.2";
+			document.getElementById("cartaz1").style.opacity = "0.2";
+			document.getElementById("cartaz2").style.opacity = "0.2";
+			document.getElementById("cartaz3").style.opacity = "0.2";
+			document.getElementById("feixe").style.visibility="hidden";
+			document.getElementById("parar").style.visibility="hidden";
+			document.getElementById("start").style.visibility="visible";
+
+			document.getElementById("cartaz1").style.visibility="visible";
+			document.getElementById("cartaz2").style.visibility="visible";
+			document.getElementById("cartaz3").style.visibility="visible";
+			document.getElementById("cartaz4").style.visibility="visible";
+
+			switch (holi){
+			case "1":
+				document.getElementById("cartaz1_grande").style.visibility="hidden";
+				document.getElementById("cartaz1").style.visibility="hidden";
+				document.getElementById("cartaz1_alt").style.visibility="visible";
+			break;
+			case "2":
+				document.getElementById("cartaz2_grande").style.visibility="hidden";
+				document.getElementById("cartaz2").style.visibility="hidden";
+				document.getElementById("cartaz2_alt").style.visibility="visible";
+			break;
+			case "3":
+				document.getElementById("cartaz3").style.visibility="hidden";
+				document.getElementById("cartaz3_grande").style.visibility="hidden";
+				document.getElementById("cartaz3_alt").style.visibility="visible";
+			break;
+			case "4":
+				document.getElementById("cartaz4").style.visibility="hidden";
+				document.getElementById("cartaz4_grande").style.visibility="hidden";
+				document.getElementById("cartaz4_alt").style.visibility="visible";
+			break;
+			default:
+
+		}
+		state=state_act;
+		state_act="parar";
+	}
+}
+
+
 
 
 
@@ -187,8 +337,13 @@ function back(){
     case "Menu2":
     	Menu_holograma();
     	break;
+    case "back":
+    	Menu_holograma();
+    	holo();
+    	break
     default:
-        Menu_NFC();
+        Menu_holograma();
+    	holo();
 }
 }
 /******************************/

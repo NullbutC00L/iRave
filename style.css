@@ -262,6 +262,7 @@ button{
 	border:solid black 0.01in;
 
 
+
 }
 #cartaz2{
 	position: absolute;
@@ -272,6 +273,7 @@ button{
 	top:0.3in;
 	left:0.8in;
 	border:solid black 0.01in;
+
 
 }
 #cartaz3{
@@ -284,6 +286,7 @@ button{
 	left:0.18in;
 	border:solid black 0.01in;
 
+
 }
 #cartaz4{
 	position: absolute;
@@ -295,9 +298,114 @@ button{
 	left:0.8in;
 	border:solid black 0.01in;
 
+
 }
+#cartaz1_alt{
+	position: absolute;
+	visibility: hidden;
+	z-index: 3;
+	width: 0.9in;
+	height: 0.7in;
+	top:0.3in;
+	left:0.3in;
+	border:solid black 0.01in;
+}
+#cartaz2_alt{
+	position: absolute;
+	visibility: hidden;
+	z-index: 3;
+	width: 0.9in;
+	height: 0.7in;
+	top:0.3in;
+	left:0.3in;	
+	border:solid black 0.01in;
+
+}
+#cartaz3_alt{
+	position: absolute;
+	visibility: hidden;
+	z-index: 3;
+	width: 0.9in;
+	height: 0.7in;
+	top:0.3in;
+	left:0.3in;	
+	border:solid black 0.01in;
+}
+#cartaz4_alt{
+	position: absolute;
+	visibility: hidden;
+	z-index: 3;
+	width: 0.9in;
+	height: 0.7in;
+	top:0.3in;
+	left:0.3in;	
+	border:solid black 0.01in;
+}
+#start{
+	position: absolute;
+	visibility: hidden;
+	z-index: 3;
+	width: 0.5in;
+	height: 0.2in;
+	top:1.02in;
+	left: 0.55in;
+}
+
+
 #feixe{
 	visibility: hidden;
 }
+#cartaz1_grande{
+	visibility: hidden;
+}
 
+#cartaz2_grande{
+	visibility: hidden;
+}
+#cartaz3_grande{
+	visibility: hidden;
+}
+#cartaz4_grande{
+	visibility: hidden;
+}
 
+#parar {
+  background: #939596;
+  background-image: -webkit-linear-gradient(top, #939596, #676869);
+  background-image: -moz-linear-gradient(top, #939596, #676869);
+  background-image: -ms-linear-gradient(top, #939596, #676869);
+  background-image: -o-linear-gradient(top, #939596, #676869);
+  background-image: linear-gradient(to bottom, #939596, #676869);
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  position: absolute;
+  visibility: hidden;
+  z-index: 2;
+	width: 0.9in;
+	height: 0.7in;
+	top:0.3in;
+	left:0.3in;
+
+}
+
+#parar:hover {
+  background: #a0a2a3;
+  background-image: -webkit-linear-gradient(top, #a0a2a3, #737475);
+  background-image: -moz-linear-gradient(top, #a0a2a3, #737475);
+  background-image: -ms-linear-gradient(top, #a0a2a3, #737475);
+  background-image: -o-linear-gradient(top, #a0a2a3, #737475);
+  background-image: linear-gradient(to bottom, #a0a2a3, #737475);
+  text-decoration: none;
+    position: absolute;
+  visibility: hidden;
+  z-index: 2;
+	width: 0.9in;
+	height: 0.7in;
+	top:0.3in;
+}
