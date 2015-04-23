@@ -295,6 +295,7 @@ function Menu_NFC(){
 	if(locked==0){
 			Help=0;
 			parar();
+			document.getElementById('sensor').style.display="none";
 			document.querySelector(".framee").style.backgroundColor = "rgb(52, 73, 94)";
 			document.querySelector(".header").style.backgroundColor = "rgb(52, 73, 94)";
    			document.querySelector(".dashboard").style.backgroundColor = "rgb(41, 128, 185)";
@@ -330,6 +331,7 @@ function Menu_NFC(){
 		document.getElementById("help_loading").style.visibility="hidden";
 		document.getElementById("help_holograma").style.visibility="hidden";
 		document.getElementById("help_holograma_1").style.visibility="hidden";
+		document.getElementById("help_holograma_2").style.visibility="hidden";
 	
 
 
@@ -406,6 +408,7 @@ function back(){
 	        Menu_NFC();
 	        break;
 	    case "finger":
+	    	document.getElementById('sensor').style.display="none";
 	    	document.querySelector(".framee").style.backgroundColor = "rgb(52, 73, 94)";
 			document.querySelector(".header").style.backgroundColor = "rgb(52, 73, 94)";
    			document.querySelector(".dashboard").style.backgroundColor = "rgb(41, 128, 185)";
@@ -456,7 +459,7 @@ function back(){
 	    	holo();
 		}
 	}
-	//back para o caso de anes ter estado no menu de
+	//back para o caso de antes ter estado no menu de ajuda
 	switch(state_act) {
 	    case "NFC":
 	        NFC();
