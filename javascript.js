@@ -249,6 +249,7 @@ function parar(){
 
 function Menu_NFC(){
 	if(locked==0){
+		document.getElementById("parar").style.visibility="hidden";
 	document.getElementById("cartaz1_alt").style.visibility="hidden";
 	document.getElementById("cartaz2_alt").style.visibility="hidden";
 	document.getElementById("cartaz3_alt").style.visibility="hidden";
