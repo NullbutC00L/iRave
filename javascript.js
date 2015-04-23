@@ -156,10 +156,6 @@ function reproduzir(){
 		document.getElementById("cartaz3").style.visibility="hidden";
 		document.getElementById("cartaz4").style.visibility="hidden";
 		document.getElementById("start").style.visibility="hidden";
-		document.getElementById("cartaz1_alt").style.visibility="hidden";
-		document.getElementById("cartaz2_alt").style.visibility="hidden";
-		document.getElementById("cartaz3_alt").style.visibility="hidden";
-		document.getElementById("cartaz4_alt").style.visibility="hidden";
 
 		document.getElementById("feixe").style.visibility="visible";
 		document.getElementById("parar").style.visibility="visible";
@@ -249,6 +245,19 @@ function parar(){
 
 function Menu_NFC(){
 	if(locked==0){
+	document.getElementById("cartaz1_alt").style.visibility="hidden";
+	document.getElementById("cartaz2_alt").style.visibility="hidden";
+	document.getElementById("cartaz3_alt").style.visibility="hidden";
+	document.getElementById("cartaz4_alt").style.visibility="hidden";
+	document.getElementById("start").style.visibility="hidden";
+	document.getElementById("cartaz1").style.opacity="0.99";
+	document.getElementById("cartaz2").style.opacity="0.99";
+	document.getElementById("cartaz3").style.opacity="0.99";
+	document.getElementById("cartaz4").style.opacity="0.99";
+	document.getElementById("cartaz1").style.visibility="hidden";
+	document.getElementById("cartaz2").style.visibility="hidden";
+	document.getElementById("cartaz3").style.visibility="hidden";
+	document.getElementById("cartaz4").style.visibility="hidden";
 	document.getElementById("cartao").style.visibility="hidden";
 	document.getElementById("sucesso_text").style.visibility="hidden";
 	document.getElementById("certo").style.visibility="hidden";
@@ -279,6 +288,10 @@ function Menu_NFC(){
 
 function Menu_holograma(){
 	if(locked==0){
+			document.getElementById("cartaz1").style.visibility="hidden";
+		document.getElementById("cartaz2").style.visibility="hidden";
+		document.getElementById("cartaz3").style.visibility="hidden";
+		document.getElementById("cartaz4").style.visibility="hidden";
 	document.getElementById("imgProfile").style.visibility="hidden";
 	document.getElementById("state1").style.visibility="hidden";
 
