@@ -181,15 +181,43 @@ function reproduzir(){
 
 		switch (holi){
 			case "1":
+				document.getElementById("cartaz2").style.visibility= "visible";
+				document.getElementById("cartaz3").style.visibility= "visible";
+				document.getElementById("cartaz4").style.visibility= "visible";
+				document.getElementById("cartaz2").style.opacity = "0.2";
+				document.getElementById("cartaz3").style.opacity = "0.2";
+				document.getElementById("cartaz4").style.opacity = "0.2";
+
 				document.getElementById("cartaz1_grande").style.visibility="visible";
 			break;
 			case "2":
+				document.getElementById("cartaz1").style.opacity = "0.2";
+				document.getElementById("cartaz3").style.opacity = "0.2";
+				document.getElementById("cartaz4").style.opacity = "0.2";
+				document.getElementById("cartaz1").style.visibility= "visible";
+				document.getElementById("cartaz3").style.visibility= "visible";
+				document.getElementById("cartaz4").style.visibility= "visible";
+
 				document.getElementById("cartaz2_grande").style.visibility="visible";
 			break;
 			case "3":
+				document.getElementById("cartaz2").style.opacity = "0.2";
+				document.getElementById("cartaz1").style.opacity = "0.2";
+				document.getElementById("cartaz4").style.opacity = "0.2";
+				document.getElementById("cartaz2").style.visibility= "visible";
+				document.getElementById("cartaz1").style.visibility= "visible";
+				document.getElementById("cartaz4").style.visibility= "visible";
+
 				document.getElementById("cartaz3_grande").style.visibility="visible";
 			break;
 			case "4":
+				document.getElementById("cartaz2").style.opacity = "0.2";
+				document.getElementById("cartaz3").style.opacity = "0.2";
+				document.getElementById("cartaz1").style.opacity = "0.2";
+				document.getElementById("cartaz2").style.visibility= "visible";
+				document.getElementById("cartaz3").style.visibility= "visible";
+				document.getElementById("cartaz1").style.visibility= "visible";
+				
 				document.getElementById("cartaz4_grande").style.visibility="visible";
 			break;
 			default:
@@ -461,20 +489,31 @@ function back(){
 	    	break
 	    case "press1":
 	   		Help=0;
-	   		
+	   		document.getElementById("cartaz2").style.visibility= "visible";
+			document.getElementById("cartaz3").style.visibility= "visible";
+			document.getElementById("cartaz4").style.visibility= "visible";
 	    	press1();
 
 	    	break;
 	    case "press2":
 	   		Help=0;
+	   		document.getElementById("cartaz1").style.visibility= "visible";
+			document.getElementById("cartaz3").style.visibility= "visible";
+			document.getElementById("cartaz4").style.visibility= "visible";
 	    	press2();
 	    	break;
 	    case "press3":
 	   		Help=0;
+	   		document.getElementById("cartaz2").style.visibility= "visible";
+			document.getElementById("cartaz1").style.visibility= "visible";
+			document.getElementById("cartaz4").style.visibility= "visible";
 	    	press3();
 	    	break;
 	    case "press4":
 	   		Help=0;
+	   		document.getElementById("cartaz2").style.visibility= "visible";
+			document.getElementById("cartaz3").style.visibility= "visible";
+			document.getElementById("cartaz1").style.visibility= "visible";
 	    	press4();
 	    	break;
 	    case "reproduzir":
@@ -514,21 +553,33 @@ function back(){
 
 	   		switch(holi){
 	   			case "1":
+	   				document.getElementById("cartaz2").style.visibility= "visible";
+					document.getElementById("cartaz3").style.visibility= "visible";
+					document.getElementById("cartaz4").style.visibility= "visible";
 	   				document.getElementById("help_holograma_1").style.visibility="hidden";
 	   				press1();
 	   				
 	   			break;
 	   			case "2":
+	   				document.getElementById("cartaz1").style.visibility= "visible";
+					document.getElementById("cartaz3").style.visibility= "visible";
+					document.getElementById("cartaz4").style.visibility= "visible";
 	   				document.getElementById("help_holograma_1").style.visibility="hidden";
 	   				press2();
 	   				
 	   			break;
 	   			case "3":
+	   				document.getElementById("cartaz2").style.visibility= "visible";
+					document.getElementById("cartaz1").style.visibility= "visible";
+					document.getElementById("cartaz4").style.visibility= "visible";
 	   				document.getElementById("help_holograma_1").style.visibility="hidden";
 	   				press3();
 	   				
 	   			break;
 	   			case "4":
+	   				document.getElementById("cartaz2").style.visibility= "visible";
+					document.getElementById("cartaz3").style.visibility= "visible";
+					document.getElementById("cartaz1").style.visibility= "visible";
 	   				document.getElementById("help_holograma_1").style.visibility="hidden";
 	   				press4();
 	   				
