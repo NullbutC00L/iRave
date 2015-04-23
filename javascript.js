@@ -477,6 +477,40 @@ function back(){
 	   		Help=0;
 	    	press4();
 	    	break;
+	    case "reproduzir":
+	   		Help=0;
+
+	   		switch(holi){
+	   			case "1":
+	   				document.getElementById("help_holograma_2").style.visibility="hidden";
+	   				press1();
+	   				reproduzir();
+	   			break;
+	   			case "2":
+	   				document.getElementById("help_holograma_2").style.visibility="hidden";
+	   				press2();
+	   				reproduzir();
+	   			break;
+	   			case "3":
+	   				document.getElementById("help_holograma_2").style.visibility="hidden";
+	   				press3();
+	   				reproduzir();
+	   			break;
+	   			case "4":
+	   				document.getElementById("help_holograma_2").style.visibility="hidden";
+	   				press4();
+	   				reproduzir();
+	   			break;
+
+	   		}
+	   		
+
+	    	
+	    	break;
+
+
+
+	    	
 	    default:
 	        Help=0;
 	        Menu_holograma();
@@ -586,19 +620,24 @@ function help(){
 	    	case "press1":
 	    		Help=1;
 	    		document.getElementById("help_holograma_1").style.visibility="visible";
-		    	break
+		    	break;
 	    	case "press2":
 	    		Help=1;
 	    		document.getElementById("help_holograma_1").style.visibility="visible";
-		    	break
+		    	break;
 	    	case "press3":
 	    		Help=1;
 	    		document.getElementById("help_holograma_1").style.visibility="visible";
-		    	break
+		    	break;
 	    	case "press4":
 	    		Help=1;
 	    		document.getElementById("help_holograma_1").style.visibility="visible";
-		    	break
+		    	break;
+		    case "reproduzir":
+		    	Help=1;
+		    	document.getElementById("help_holograma_2").style.visibility="visible";
+		    	document.getElementById("parar").style.visibility="hidden";
+		    	break;
 		}
 	}
 }
