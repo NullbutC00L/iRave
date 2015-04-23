@@ -6,19 +6,21 @@ h2.title{
 div.content{
 	background-color: rgb(52, 73, 94);;}
 div.dashboard{
+	height: 57%;
 	padding: 4px 3px 3px 8px;
 	background-color: rgb(41, 128, 185);}
 h3.dashboard{
 	color: white;
 	text-align: center;}
 div.framee{
+	height: 57%;
 	padding: 2px;}
 h3.framee{
 	color: white;
 	text-align: center;}
 button{
-	margin-left: 5px;
-	margin-right: 5px; 
+	margin-top: 20%;
+	margin-left: 40%;
 	background-color: white;
 	text-align: center;
 	width: 100px;
@@ -26,11 +28,12 @@ button{
 
 .brace{
 	position: absolute;
-	top:2in;
-	left: 0.5in;
+	top:0.8in;
+	left: 1.1in;
 	width: 2.83in;
 	height: 2.8in;
 	z-index: 0;
+	background-color: white;
 }
 #bracelete{
 	position: absolute;
@@ -38,6 +41,7 @@ button{
 	height: 100%;
 	margin:auto;
 	display:block;
+	background-color: white;
 }
 .screen{
 	position: absolute;
@@ -119,9 +123,8 @@ button{
 	position: absolute;
 	width:0.13in;
 	height:0.13in;
-	z-index: 2;
+	z-index: 4;
 	opacity:1; 
-
 }
 #bot_home{
 	top:1.3in;
@@ -129,9 +132,17 @@ button{
 	position: absolute;
 	width:0.13in;
 	height:0.13in;
-	z-index: 2;
+	z-index: 4;
 	opacity:1; 
-
+}
+#bot_help{
+	top:1.3in;
+	left:1.1in;
+	position: absolute;
+	width:0.13in;
+	height:0.13in;
+	z-index: 4;
+	opacity:1; 
 }
 
 /***************MENU NFC**********************/
@@ -175,48 +186,46 @@ button{
 }
 #photoholder {
 	position: absolute;
-	top:1in;
+	top:0in;
 	left:4in;
 
   background:#fff url('/images/loading.gif') 50% 50% no-repeat;
 }
 #thephoto {
 	position: absolute;
-		top:1in;
+	top:0in;
 	left:4in;
-
   visibility: hidden;
 
 }
-
 
 #uno{
 	position: absolute;
 	left:4.2in;
 	visibility: hidden;
 	height:2in; 
-	top:3.5in;
+	top:1.9in;
 }
 #dos{
 	position: absolute;	
 	left :5.2in;
 	visibility: hidden;
 	height:3in;
-	top:3in; 
+	top:1.4in; 
 }
 #tres{
 	position: absolute;
 	left :6.2in;
 	visibility: hidden;
 	height:4in;
-	top:2.5in;
+	top:0.9in;
 }
 #quat{
 	position: absolute;
 	left :6.8in;
 	visibility: hidden;
 	height: 5in;
-	top:2in;
+	top:0.5in;
 }
 
 /*menu de sucesso*/
@@ -355,6 +364,7 @@ button{
 #feixe{
 	visibility: hidden;
 }
+/*METE AQUI O ESTILO DOS CARTAZES GRANDES*/
 #cartaz1_grande{
 	visibility: hidden;
 }
@@ -368,6 +378,7 @@ button{
 #cartaz4_grande{
 	visibility: hidden;
 }
+/********************************************************/
 
 #parar {
   background: #939596;
@@ -408,4 +419,15 @@ button{
 	width: 0.9in;
 	height: 0.7in;
 	top:0.3in;
+
+/****** 	HELP SCREENS   *******/
+.help{
+	position: absolute;
+	top:0.29in;
+	left:0.23in;
+	font-family:Raleway, sans-serif;
+	font-size:12; 
+	visibility: hidden;
+	z-index: 0;
+
 }
