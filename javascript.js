@@ -15,6 +15,10 @@ function NFC(){
 	document.getElementById("arrow_left").style.visibility="hidden";
 	document.getElementById("loading").style.visibility="hidden";
 	document.getElementById("sensor_text").style.visibility="hidden";
+	document.getElementById("help_main_menu").style.visibility="hidden";
+	document.getElementById("help_autenticacao").style.visibility="hidden";
+	document.getElementById("help_sucesso").style.visibility="hidden";
+	document.getElementById("help_loading").style.visibility="hidden";
 	
 	document.getElementById("auth_text").style.visibility="visible";
 	document.getElementById("fingerprint").style.visibility="visible";
