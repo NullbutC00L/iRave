@@ -16,12 +16,12 @@
 	<body>
 		<div class="container">
 			<div class="row header">
-				<h2 class="title">Welcome to IRave dashboard</h2>
+				<h2 class="title">Bem-vindo ao IRave</h2>
 			</div>
 			<br>
 			<div class="row content">
 				<div class="col-xs-5 framee">
-					<h3 class="framee">This is IRave screen</h3>
+					<h3 class="framee">Este é o IRave</h3>
 						<div class="brace">
 							<img id="bracelete"src="sources/bracelete.png">
 							<div class="screen">
@@ -29,6 +29,7 @@
 								<img id="boxe" src="sources/smartcena_copy.png" onclick=''>
 								  	<div id="bot_back" onclick='back()'></div>
 								  	<div id="bot_home" onclick='Menu_NFC()'></div>
+								  	<div id='bot_help' onclick='help()'></div>
 								<!-- Main menu stuff -->
 								<img id="imgProfile"src="sources/NFC.png" onclick='NFC()'>
 
@@ -50,31 +51,42 @@
 								<!--sucesso -->
 								<p id="sucesso_text">Sucesso</p>
 								<img id="cartao" src="sources/cartao.png" onclick=''>
-								<img id="certo" src="sources/certo_1.png" onclick='Menu_NFC()'>
+								<img id="certo" src="sources/Certo_1.png" onclick='Menu_NFC()'>
 								
 
 
 								<!-- holograma-->
-
 								<img id="cartaz1" src="sources/cartaz1.png" onclick=''>
 								<img id="cartaz2" src="sources/cartaz2.png" onclick=''>
 								<img id="cartaz3" src="sources/cartaz3.png" onclick=''>
 								<img id="cartaz4" src="sources/cartaz4.png" onclick=''>
 
+								<!-- help -->
+								<p class="help" id="help_main_menu">Escolha uma
+								aplicação pressionando <br>
+								o icone respetivo.</p>
 
+								<p class="help" id="help_autenticacao">Para autenticar <br>
+								a sua identidade <br>
+								pressione o ecra.</p>
+								
+								<p class="help" id="help_sucesso">Transação <br>Completa<br>
+								com sucesso!</p>
+								
+								<p class="help" id="help_loading">Aproxime o <br> dispositivo do <br> leitor de NFC <br> por favor.</p>
 
+								<p class="help" id="help_holograma">Ajuda <br>
+								Holograma</p>
+								
 								<!--________________________________-->
 							</div>		
 						</div>
 
-					<span class="glyphicon glyphicon-chevron-left .sr-only" aria-hidden="true"></span>
 				</div>
 
 				<div class="col-md-7 dashboard">
-					<h3 class="dashboard">This is the sensors dashboard</h3>
-					<button class="WC">WC</button>
-					<button class="Pagamento">Pagamento</button>
-					<button id="sensor" onclick='initImage();showImage();'>Leitura ID</button>
+					<h3 class="dashboard">Estes são os controlos dos sensores	</h3>
+					<button id="sensor" onclick='initImage();showImage();'>Leitor NFC</button>
 				</div>
 			</div> 
 
