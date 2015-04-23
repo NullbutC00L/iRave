@@ -2,6 +2,10 @@ var locked=0;
 var state="Menu1";
 var state_act="Menu1";
 var txt="Pagamento";
+var Timer1=null;
+var Timer2=null;
+var Timer3=null;
+var audio = new Audio('sounds/beep.wav');
 
 var holi="";
 
@@ -44,7 +48,10 @@ function finger(){
 }
 
 function sucesso(){
+	clearTimeout(Timer3);
 	if(locked==0){
+	  
+	  audio.play();
 	
 	document.getElementById("sensor_text").style.visibility="hidden";
 	document.getElementById("loading").style.visibility="hidden";
@@ -386,21 +393,29 @@ function um(){
   	  document.getElementById('uno').style.visibility = 'hidden';
       document.getElementById('dos').style.visibility = 'visible';
 
-      var Timer = setInterval("dois()",1000);
+      Timer1 = setInterval("dois()",1000);
+      
+      
 }
 
 function dois(){
   document.getElementById('dos').style.visibility = 'hidden'
       document.getElementById('tres').style.visibility = 'visible';
-
-      var Timer = setInterval("tres()",1000);
+      clearTimeout(Timer1);
+      Timer2 = setInterval("tres()",1000);
+      
+     
 }
 
 function tres(){
   document.getElementById('tres').style.visibility = 'hidden';
   document.getElementById('quat').style.visibility = 'visible';
+  clearTimeout(Timer2);
 
-  var Timer = setInterval("sucesso()",1000);
+
+   Timer3 = setInterval("sucesso()",1000);
+  
+  
 }
 
 // function showImage(){
