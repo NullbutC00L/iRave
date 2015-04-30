@@ -382,26 +382,66 @@ function MenuChoice_dir(){
 function Block(){
 	
 	if(locked==0){
-		locked=1;
-		document.getElementById("NFC_1").style.visibility="hidden";
-		document.getElementById("NFC_2").style.visibility="hidden";
-		document.getElementById("NFC_3").style.visibility="hidden";
-		document.getElementById("main_menu").style.visibility="hidden";
+		document.getElementById('sensor').style.display="none";
+			document.querySelector(".framee").style.backgroundColor = "rgb(52, 73, 94)";
+			document.querySelector(".header").style.backgroundColor = "rgb(52, 73, 94)";
+   			document.querySelector(".dashboard").style.backgroundColor = "rgb(41, 128, 185)";
+			document.getElementById("parar").style.visibility="hidden";
+		document.getElementById("cartaz1_alt").style.visibility="hidden";
+		document.getElementById("cartaz2_alt").style.visibility="hidden";
+		document.getElementById("cartaz3_alt").style.visibility="hidden";
+		document.getElementById("cartaz4_alt").style.visibility="hidden";
+		document.getElementById("start").style.visibility="hidden";
+		document.getElementById("cartaz1").style.opacity="0.99";
+		document.getElementById("cartaz2").style.opacity="0.99";
+		document.getElementById("cartaz3").style.opacity="0.99";
+		document.getElementById("cartaz4").style.opacity="0.99";
+		document.getElementById("cartaz1").style.visibility="hidden";
+		document.getElementById("cartaz2").style.visibility="hidden";
+		document.getElementById("cartaz3").style.visibility="hidden";
+		document.getElementById("cartaz4").style.visibility="hidden";
+		document.getElementById("cartao").style.visibility="hidden";
+		document.getElementById("sucesso_text").style.visibility="hidden";
+		document.getElementById("certo").style.visibility="hidden";
+		document.getElementById("loading").style.visibility="hidden";
+		document.getElementById("auth_text").style.visibility="hidden";
+		document.getElementById("fingerprint").style.visibility="hidden";
+		document.getElementById("imgProfile").style.visibility="hidden";
+		document.getElementById("holograma").style.visibility="hidden";
+		document.getElementById("state2").style.visibility="hidden";
+		document.getElementById("sensor_text").style.visibility="hidden";
+		document.getElementById("loading").style.visibility="hidden";
+		document.getElementById("thephoto").style.visibility="hidden";
+		document.getElementById("help_main_menu").style.visibility="hidden";
+		document.getElementById("help_autenticacao").style.visibility="hidden";
+		document.getElementById("help_sucesso").style.visibility="hidden";
+		document.getElementById("help_loading").style.visibility="hidden";
+		document.getElementById("help_holograma").style.visibility="hidden";
+		document.getElementById("help_holograma_1").style.visibility="hidden";
+		document.getElementById("help_holograma_2").style.visibility="hidden";
 
+		locked=1;
+		document.getElementById("imgProfile").style.visibility="hidden";
+		document.getElementById("state1").style.visibility="hidden";
+		document.getElementById("arrow_right").style.visibility="hidden";
+		document.getElementById("arrow_left").style.visibility="hidden";
 
 		/*document.getElementById("locked_screen").style.visibility="visible";*/
-		document.getElementById("boxe").style.backgroundImage = "url('sources/locked_screen.png')";
-	
+		document.getElementById("boxe").style.background = "black";
+		document.getElementById("canvas").style.visibility="visible";
+
+		Help=1;
 	}
 	else{
 		locked=0;
-		document.getElementById("boxe").style.backgroundImage = "url('')";
-		Menu_NFC();
+		document.getElementById("boxe").style.background = "";
+		document.getElementById("canvas").style.visibility="hidden";
+		Back();
 
 	}
 }
 
-function back(){
+function Back(){
 	if (Help==0){
 		switch(state_act) {
 	    case "NFC":
@@ -740,3 +780,5 @@ function help(){
 		}
 	}
 }
+
+

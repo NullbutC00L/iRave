@@ -144,6 +144,16 @@ button{
 	z-index: 4;
 	opacity:1; 
 }
+#bot_lock{
+	top:1.05in;
+	left:2.07in;
+	position: absolute;
+	width:0.13in;
+	height:0.3in;
+	z-index: 4;
+	opacity:1;
+}
+
 
 /***************MENU NFC**********************/
 #auth_text{
@@ -493,7 +503,14 @@ button{
 	top:0.29in;
 	left:0.23in;
 	font-family:Raleway, sans-serif;
-	font-size:12; 
+	font-size:14; 
 	visibility: hidden;
 	z-index: 0;
+}
+#canvas{
+  position: absolute;
+  visibility: hidden;
+  top:0.31in;
+  left:0.35in;
+  z-index: 4;
 }
