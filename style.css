@@ -366,7 +366,7 @@ button{
 	visibility: hidden;
 	position: absolute;
 	top:-0.7in;
-	left:4in;
+	left:6.7in;
 
 }
 /*METE AQUI O ESTILO DOS CARTAZES GRANDES*/
@@ -374,14 +374,14 @@ button{
 	visibility: hidden;
 	position: absolute;
 	top:0.2in;
-	left:7.2in;
+	left:10.2in;
 }
 
 #cartaz2_grande{
 	visibility: hidden;
 	position: absolute;
 	top:0.5in;
-	left:7in;
+	left:10in;
 	width: 5in;
 	height: 4in;
 }
@@ -389,13 +389,13 @@ button{
 	visibility: hidden;
 	position: absolute;
 	top:1.5in;
-	left:7in;
+	left:10in;
 }
 #cartaz4_grande{
 	visibility: hidden;
 	position: absolute;
 	top:0.7in;
-	left:7.5in;
+	left:10.5in;
 	width: 4in;
 	height: 4in;
 }
